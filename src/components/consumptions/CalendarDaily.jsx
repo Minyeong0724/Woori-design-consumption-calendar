@@ -4,8 +4,8 @@ const CalendarDaily = ({ day, price }) => {
   
   return (
     <div className='p-2.5 w-full h-full content-between truncate justify-center grid'>
-        <p className='content'>{day}</p>
-        <p className='self-end'>{(day === ' ') ? ' ' : price}</p>
+        <p>{day}</p>
+        <p>{(day === ' ') ? ' ' : price}</p>
     </div>
   )
 }

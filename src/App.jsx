@@ -1,44 +1,26 @@
- import ModalTestApp from './components/modal/ModalTestApp'
+import Header from './components/consumptions/Header';
+import Calendar from './components/consumptions/Calendar';
+import Layout from './components/layout/Layout';
+import ModalTestApp from './components/modal/ModalTestApp';
+import { dummyData } from './mock/expenses.mock';
+import { useState } from 'react';
 
-const dummyData = [
-    {
-        id: 1, 
-        title: '식당',
-        price: 13000,
-        year: 2026,
-        month: 1,
-        day: 2
-    },
-    {
-        id: 2, 
-        title: '카페',
-        price: 3000,
-        year: 2026,
-        month: 1,
-        day: 21
-    },
-    {
-        id: 3, 
-        title: '교통',
-        price: 5000, 
-        year: 2026,
-        month: 4,
-        day: 30
-    },
-    {
-        id: 4, 
-        title: '오락',
-        price: 4000, 
-        year: 2025,
-        month: 1,
-        day: 29
-    }
-]
-
-const todayDate = {year: 2026, month: 1, day: 14};
 
 function App() {
-
+    const todayDate = {year: 2026, month: 1, day: 14};
+    
+    const [date, setDate] = useState(todayDate);
+    
+    const changeDate = (selectedMonth) => {
+        const newDate = {...date,year: selectedMonth.getFullYear(),month: selectedMonth.getMonth()+1};
+        setDate(newDate);
+    }
+    return ( 
+        <Layout>
+            <Header onChange={changeDate}/>
+            <Calendar todayDate={date} expense={dummyData}/>
+        </Layout>
+    )
 }
 
 export default App
