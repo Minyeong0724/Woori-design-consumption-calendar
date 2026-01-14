@@ -2,7 +2,7 @@ import React from 'react'
 import CalenderDaily from './CalendarDaily';
 
 
-const Calendar = ({ todayDate, expense }) => {
+const Calendar = ({ todayDate, expense, onDayClick }) => {
     
     const monthList = Array.from({length: 31}, (_, i) => i+1);
     
@@ -27,21 +27,29 @@ const Calendar = ({ todayDate, expense }) => {
             return sum;
         }, 0);
         
-        return <CalenderDaily day={checkDay} key={key} price={price === 0 ? " ": price} onClick={()=>onDayClick(day)}/>
+        return <CalenderDaily day={checkDay} key={key} price={price === 0 ? " ": price} onClick={()=>onDayClick(todayDate.year,todayDate.month, day)}/>
     });
     
-  return (
-    <div className='grid-cols-7 grid h-full max-h-96 min-h-64 rounded-md bg-gray'>
-        <a>일</a>
-        <a>월</a>
-        <a>화</a>
-        <a>수</a>
-        <a>목</a>
-        <a>금</a>
-        <a>토</a>
-        {dailys}
-    </div>
-  )
+    return (
+        // 배경을 연한 하늘색으로 설정
+        <div className="w-full bg-[#E0F2FE] p-2 rounded-xl shadow-inner">
+        <div className="w-full border-t border-l border-blue-200 rounded-lg overflow-hidden bg-white/80 backdrop-blur-sm">
+            {/* 요일 헤더: 진한 파란색 포인트 */}
+            <div className="grid grid-cols-7 bg-[#0083CA]">
+            {['일', '월', '화', '수', '목', '금', '토'].map((d, i) => (
+                <div key={d} className="py-2 text-center text-[11px] font-bold text-white border-b border-blue-300/50">
+                {d}
+                </div>
+            ))}
+            </div>
+            
+            {/* 날짜 그리드 */}
+            <div className="grid grid-cols-7">
+            {dailys}
+            </div>
+        </div>
+        </div>
+    );
 }
 
 export default Calendar
