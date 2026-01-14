@@ -66,7 +66,7 @@ src/
  ┣ layouts/     # 전체 페이지 레이아웃 프레임
  ┣ constants/   # 더미 데이터 및 이모지 매핑 상수
  ┣ utils/       # 금액 계산 및 날짜 포맷팅 유틸 함수
- ┗ contexts/    # 전역 상태 관리를 위한 Context
+ ┗ contexts/    # 전역 상태 관리를 위한 Context```
 
 
 
