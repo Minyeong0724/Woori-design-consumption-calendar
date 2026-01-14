@@ -1,5 +1,4 @@
-import './App.css'
-import ShowTotalPrice from './components/consumptions/showTotalPrice'
+ import ModalTestApp from './components/modal/ModalTestApp'
 
 const dummyData = [
     {
@@ -40,11 +39,6 @@ const todayDate = {year: 2026, month: 1, day: 14};
 
 function App() {
 
-  return (
-    <>
-      <ShowTotalPrice dummyData = {dummyData} todayDate ={todayDate}/>
-    </>
-  )
 }
 
 export default App
