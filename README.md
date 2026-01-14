@@ -1,14 +1,35 @@
 # 개요 
-우리에게 가장 친숙한 시각적 도구인 달력 인터페이스를 채택하여, 시간적 맥락 위해서 소비자가 언제 어디서 얼마나 소비를 했는지에 대한 행동 패턴을 한눈에 인지할 수 있다. 
+우리에게 가장 친숙한 시각적 도구인 달력 인터페이스를 채택하여, 시간적 맥락 위해서 소비자가 언제 어디서 얼마나 소비를 했는지에 대한 행동 패턴을 한눈에 인지할 수 있다.
+
+#npm
+https://www.npmjs.com/package/consumption-calendar-testing
+
+```text
+
+npm i consumption-calendar-testing
+
+*App.jsx
+import ConsumptionCalendar from 'consumption-calendar-testing'
+import 'consumption-calendar-testing/dist/consumption-calendar-testing.css'
+
+function App() {
+  return (
+    <ConsumptionCalendar />
+  )
+}
+
+```
 ## 💡 기획 의도: 왜 달력 UI인가?
 - **시각적 맥락화**: 단순히 숫자를 나열하는 리스트 방식에서 벗어나, 시간의 흐름에 따른 소비 데이터를 시각화하여 지출 습관 교정을 유도합니다.
 - **접근성 극대화**: 남녀노소 누구에게나 익숙한 그리드 형태의 달력 UI를 채택하여 사용자의 학습 비용을 최소화했습니다.
 - **정보의 계층화**: 달력에서는 '일별 합계'를, 모달(Modal)에서는 '상세 내역'을 보여줌으로써 정보의 과부하를 방지하고 체계적인 정보를 전달합니다.
 
 ---
+<figure class="thrid">
 <img width="521" height="896" alt="스크린샷 2026-01-15 084952" src="https://github.com/user-attachments/assets/8c9cc59e-fa32-45a8-8965-3544f3555092" />
 <img width="532" height="902" alt="스크린샷 2026-01-15 084935" src="https://github.com/user-attachments/assets/9089babb-0926-4da6-bdbb-a8a08c5bfa93" />
 <img width="534" height="907" alt="스크린샷 2026-01-15 084914" src="https://github.com/user-attachments/assets/ed008b98-6fbd-4b32-bc56-f1eb09375b68" />
+</figure>
 
 
 ![실행영상](https://github.com/user-attachments/assets/083ecb40-d64b-4317-933e-aca34d7fe414)
