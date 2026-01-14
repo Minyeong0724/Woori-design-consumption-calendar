@@ -17,7 +17,7 @@ function ExpenseModal({ isOpen, onClose, date, expenses  }) {
         <div className="p-4 space-y-3">
             {expenses.map(item => (
     <div
-        key={item.title}
+        key={item.id}
         className="flex justify-between items-center text-sm"
     >
         <div className="flex items-center gap-2">
@@ -26,7 +26,7 @@ function ExpenseModal({ isOpen, onClose, date, expenses  }) {
         </div>
 
         <span className="text-red-500">
-        -₩{item.total.toLocaleString()}
+        -₩{item.price.toLocaleString()}
         </span>
     </div>
     ))}

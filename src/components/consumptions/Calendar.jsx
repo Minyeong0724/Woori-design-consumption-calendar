@@ -2,7 +2,7 @@ import React from 'react'
 import CalenderDaily from './CalendarDaily';
 
 
-const Calendar = ({ year, month, expense }) => {
+const Calendar = ({ year, month, expense , onDayClick}) => {
     const monthList = Array.from({length: 31}, (_, i) => i+1);
     console.log(expense);
     
@@ -26,7 +26,7 @@ const Calendar = ({ year, month, expense }) => {
             return sum;
         }, 0);
         
-        return <CalenderDaily day={checkDay} key={key} price={price === 0 ? " ": price}/>
+        return <CalenderDaily day={checkDay} key={key} price={price === 0 ? " ": price} onClick={()=>onDayClick(day)}/>
     });
     
   return (
