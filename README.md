@@ -1,7 +1,7 @@
 # 개요 
 우리에게 가장 친숙한 시각적 도구인 달력 인터페이스를 채택하여, 시간적 맥락 위해서 소비자가 언제 어디서 얼마나 소비를 했는지에 대한 행동 패턴을 한눈에 인지할 수 있다.
 
-#npm
+# npm Install
 https://www.npmjs.com/package/consumption-calendar-testing
 
 ```text
@@ -31,10 +31,9 @@ function App() {
 <img width="534" height="907" alt="스크린샷 2026-01-15 084914" src="https://github.com/user-attachments/assets/ed008b98-6fbd-4b32-bc56-f1eb09375b68" />
 </figure>
 
-
 ![실행영상](https://github.com/user-attachments/assets/083ecb40-d64b-4317-933e-aca34d7fe414)
 
-## 🚀 주요 기능 (Features)
+## 🚀 주요 기능 (Features) 
 
 ### 1. 🏗️ Main & Layout: 시스템 아키텍처 및 전역 설계
 * **컴포넌트 기반 설계**: `ui/`, `layouts/`, `components/`로 역할을 분리하여 확장성과 유지보수성을 고려한 구조 설계.
@@ -66,9 +65,9 @@ src/
  ┣ layouts/     # 전체 페이지 레이아웃 프레임
  ┣ constants/   # 더미 데이터 및 이모지 매핑 상수
  ┣ utils/       # 금액 계산 및 날짜 포맷팅 유틸 함수
- ┗ contexts/    # 전역 상태 관리를 위한 Context```
+ ┗ contexts/    # 전역 상태 관리를 위한 Context
 
-
+```
 
 
 
