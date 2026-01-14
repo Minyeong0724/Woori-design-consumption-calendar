@@ -1,13 +1,7 @@
-import './App.css'
-import ShowTotalPrice from './components/consumptions/showTotalPrice'
+ import ModalTestApp from './components/modal/ModalTestApp'
 
 function App() {
-
-  return (
-    <>
-      <ShowTotalPrice />
-    </>
-  )
+  return <ModalTestApp />
 }
 
 export default App
