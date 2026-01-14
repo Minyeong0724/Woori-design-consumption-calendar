@@ -1,0 +1,46 @@
+import React from 'react'
+import CalenderDaily from './CalendarDaily';
+
+
+const Calendar = ({ year, month, expense }) => {
+    const monthList = Array.from({length: 31}, (_, i) => i+1);
+    console.log(expense);
+    
+    const y = String(year);
+    const m = String(month).padStart(2, "0");
+    const d = "01";
+    const getFirstWeekCode = new Date(y-m-d).getDay();
+
+    const gapDays = Array.from({length: getFirstWeekCode}, (_, i) => 0);
+
+    const mergedMonth = [...gapDays, ...monthList];
+
+    const dailys = mergedMonth.map((day) => {
+        const key = crypto.randomUUID();
+        const checkDay = (day == 0) ? " " : day;
+        
+        const price = expense.reduce((sum, e) => {
+            if (month === e.month && day === e.day) {
+                return sum + e.price;
+            }
+            return sum;
+        }, 0);
+        
+        return <CalenderDaily day={checkDay} key={key} price={price === 0 ? " ": price}/>
+    });
+    
+  return (
+    <div className='grid-cols-7 grid h-full max-h-96 min-h-64 rounded-md bg-gray'>
+        <a>일</a>
+        <a>월</a>
+        <a>화</a>
+        <a>수</a>
+        <a>목</a>
+        <a>금</a>
+        <a>토</a>
+        {dailys}
+    </div>
+  )
+}
+
+export default Calendar
