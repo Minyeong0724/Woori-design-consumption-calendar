@@ -27,7 +27,7 @@ const Calendar = ({ todayDate, expense }) => {
             return sum;
         }, 0);
         
-        return <CalenderDaily day={checkDay} key={key} price={price === 0 ? " ": price}/>
+        return <CalenderDaily day={checkDay} key={key} price={price === 0 ? " ": price} onClick={()=>onDayClick(day)}/>
     });
     
   return (
