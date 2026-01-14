@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; // 1. useState를 불러옵니다.
 
-const Header = () => {
+const Header = ({ onChange }) => {
   // 2. 상태 정의 (현재 날짜와 메뉴 열림 상태)
   const [currentDate, setCurrentDate] = useState(new Date());
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,6 +20,7 @@ const Header = () => {
     const newDate = new Date(year, monthIndex);
     setCurrentDate(newDate);
     setIsMenuOpen(false); // 선택 후 닫기
+    onChange(newDate);
   };
 
   return (
