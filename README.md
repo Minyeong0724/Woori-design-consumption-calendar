@@ -41,6 +41,11 @@ src/
  ┣ utils/       # 금액 계산 및 날짜 포맷팅 유틸 함수
  ┗ contexts/    # 전역 상태 관리를 위한 Context
 
+
+
+
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
