@@ -1,4 +1,5 @@
-# React + Vite
+# 개요 
+우리에게 가장 친숙한 시각적 도구인 달력 인터페이스를 채택하여, 시간적 맥락 위해서 소비자가 언제 어디서 얼마나 소비를 했는지에 대한 행동 패턴을 한눈에 인지할 수 있다. 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
