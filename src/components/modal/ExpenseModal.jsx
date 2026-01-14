@@ -1,9 +1,5 @@
-const CATEGORY_ICON = {
-  food: '🍔',
-  coffee: '☕',
-  transport: '🚌',
-  shopping: '🛍️',
-};
+import { CATEGORY_ICON } from '../../constants/categoryIcon';
+
 
 function ExpenseModal({ isOpen, onClose, date, expenses }) {
   if (!isOpen) return null;
