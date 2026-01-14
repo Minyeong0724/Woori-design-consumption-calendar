@@ -24,11 +24,11 @@ const Header = ({ onChange }) => {
   };
 
   return (
-    <div style={{ padding: '20px', borderBottom: '1px solid #ddd', position: 'relative' }}>
+    <div style={{ padding: '20px 20px 20px 0px', borderBottom: '1px solid #ddd', position: 'relative'}}>
       {/* 년도와 영어 달 표시 (클릭 시 토글) */}
       <div 
         onClick={() => setIsMenuOpen(!isMenuOpen)} 
-        style={{ cursor: 'pointer', fontSize: '20px', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px' }}
+        style={{ cursor: 'pointer', fontSize: '30px', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px', color: '#0067AC' }}
       >
         {currentDate.getFullYear()} {monthNames[currentDate.getMonth()]}
         <span>{isMenuOpen ? '▲' : '▼'}</span>
