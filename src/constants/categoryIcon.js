@@ -1,6 +1,7 @@
 export const CATEGORY_ICON = {
-  food: '🍔',
-  coffee: '☕',
-  transport: '🚌',
-  shopping: '🛍️',
+  식당: '🍔',
+  카페: '☕',
+  교통: '🚌',
+  쇼핑: '🛍️',
+  오락: '🎮',
 };

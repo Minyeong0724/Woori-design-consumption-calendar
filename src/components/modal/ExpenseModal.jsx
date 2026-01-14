@@ -1,7 +1,7 @@
 import { CATEGORY_ICON } from '../../constants/categoryIcon';
 
 
-function ExpenseModal({ isOpen, onClose, date, expenses }) {
+function ExpenseModal({ isOpen, onClose, date, expenses  }) {
   if (!isOpen) return null;
 
   return (
@@ -15,21 +15,22 @@ function ExpenseModal({ isOpen, onClose, date, expenses }) {
 
         {/* Content */}
         <div className="p-4 space-y-3">
-          {expenses.map(item => (
-            <div
-              key={item.id}
-              className="flex justify-between items-center text-sm"
-            >
-              <div className="flex items-center gap-2">
-                <span>{CATEGORY_ICON[item.category]}</span>
-                <span>{item.category}</span>
-              </div>
+            {expenses.map(item => (
+    <div
+        key={item.title}
+        className="flex justify-between items-center text-sm"
+    >
+        <div className="flex items-center gap-2">
+        <span>{CATEGORY_ICON[item.title]}</span>
+        <span>{item.title}</span>
+        </div>
 
-              <span className="text-red-500">
-                -₩{item.amount.toLocaleString()}
-              </span>
-            </div>
-          ))}
+        <span className="text-red-500">
+        -₩{item.total.toLocaleString()}
+        </span>
+    </div>
+    ))}
+
         </div>
 
         {/* Footer */}
