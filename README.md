@@ -26,9 +26,9 @@ function App() {
 
 ---
 <p align-'center'>
-<img width="521" height="896" alt="스크린샷 2026-01-15 084952" src="https://github.com/user-attachments/assets/8c9cc59e-fa32-45a8-8965-3544f3555092" />
-<img width="532" height="902" alt="스크린샷 2026-01-15 084935" src="https://github.com/user-attachments/assets/9089babb-0926-4da6-bdbb-a8a08c5bfa93" />
-<img width="534" height="907" alt="스크린샷 2026-01-15 084914" src="https://github.com/user-attachments/assets/ed008b98-6fbd-4b32-bc56-f1eb09375b68" />
+<img width="300" height="auto" alt="스크린샷 2026-01-15 084952" src="https://github.com/user-attachments/assets/8c9cc59e-fa32-45a8-8965-3544f3555092" />
+<img width="300" height="auto" alt="스크린샷 2026-01-15 084935" src="https://github.com/user-attachments/assets/9089babb-0926-4da6-bdbb-a8a08c5bfa93" />
+<img width="300" height="auto" alt="스크린샷 2026-01-15 084914" src="https://github.com/user-attachments/assets/ed008b98-6fbd-4b32-bc56-f1eb09375b68" />
 </p>
 
 ![실행영상](https://github.com/user-attachments/assets/083ecb40-d64b-4317-933e-aca34d7fe414)
