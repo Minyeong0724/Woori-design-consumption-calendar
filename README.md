@@ -72,9 +72,18 @@ src/
  ┗ contexts/    # 전역 상태 관리를 위한 Context
 
 ```
+# 개선 사항
 
+## 사용자 편의성
 
+- dummyData
+    - 사용자 커스텀 데이터가 아닌, 무조건 dummyData만 사용하게 되어있다.
+        - 사용자의 data를 입력으로 받도록 수정한다.
+        - 아무 데이터가 들어오지 않으면 개발 환경에서 사용한 dummyData가 default로 들어가도록 수정한다.
+- 아이콘으로 보기
+    - 일별 금액이 아닌, 아이콘으로도 볼 수 있는 on/off 설정을 추가한다.
 
+--- 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
