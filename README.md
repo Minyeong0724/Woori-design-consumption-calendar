@@ -8,9 +8,10 @@
 # npm Install
 https://www.npmjs.com/package/consumption-calendar-testing
 
-```text
-
+```bash
 npm i consumption-calendar-testing
+```
+```jsx
 
 *App.jsx
 import ConsumptionCalendar from 'consumption-calendar-testing'
