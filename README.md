@@ -19,9 +19,16 @@ import 'consumption-calendar-testing/dist/consumption-calendar-testing.css'
 
 function App() {
   return (
-    <ConsumptionCalendar />
+    <ConsumptionCalendar consumptionData={testData} />
   )
 }
+
+```js
+      //js 호출 양식
+      export const dummyData = [
+        { id: 1,  title: '식당', price: 13000, year: 2026, month: 1, day: 2  }, ...
+      ];
+```
 
 ```
 ## 💡 기획 의도: 왜 달력 UI인가?
