@@ -22,6 +22,7 @@ function App() {
     <ConsumptionCalendar consumptionData={testData} />
   )
 }
+```
 
 ```js
       //js 호출 양식
