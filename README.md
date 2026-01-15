@@ -11,9 +11,9 @@ https://www.npmjs.com/package/consumption-calendar-testing
 ```bash
 npm i consumption-calendar-testing
 ```
+## 사용 예시 (App.jsx)
 ```jsx
 
-*App.jsx
 import ConsumptionCalendar from 'consumption-calendar-testing'
 import 'consumption-calendar-testing/dist/consumption-calendar-testing.css'
 
